@@ -1,4 +1,4 @@
-set :branch, "master"
+set :branch, "production"
 set :ping_url, "https://cceom.org"
 set :user, 'cceom'
 set :home_dir, '/home/cceom'

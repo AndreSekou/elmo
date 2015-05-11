@@ -1,13 +1,6 @@
-# this deploy file makes use of the multistage facility of capistrano
-# there are two stages:
-# master - https://cceom.org; master branch; the main ELMO
-# demo - https://secure1.cceom.org; demo branch; the staging environment and demo sandbox
-# to deploy, e.g.:
-#   cap demo deploy
-
 require 'bundler/capistrano'
 
-set :stages, %w(master staging demo nigeria api cejp-drc)
+set :stages, %w(production staging demo nigeria api cejp-drc)
 set :default_stage, "staging"
 require "capistrano/ext/multistage"
 
